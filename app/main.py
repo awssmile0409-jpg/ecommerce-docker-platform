@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel, Field
 
-from ecommerce.application.store import find_product, list_products
-from ecommerce.config.settings import settings
+from application.store import find_product, list_products
+from config.settings import settings
 
 app = FastAPI(
     title=settings.app_name,
